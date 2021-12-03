@@ -1,14 +1,22 @@
 import Head from 'next/head'
+import Sidebar from '../components/Sidebar'
 
 export default function Home() {
     return (
-        <div className="flex flex-col items-center justify-center min-h-screen py-2">
+        <div className="bg-black h-screen overflow-hidden">
             <Head>
-                <title>Create Next App</title>
-                <link rel="icon" href="/favicon.ico" />
+                <title>Spotify 2.0</title>
+                <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/174/174872.png" />
             </Head>
-            
-            <h1>Spotify 2.0</h1>
+
+            <main className=''>
+                <Sidebar />
+                {/* Center */}
+
+                <div>
+                    {/* Player */}
+                </div>
+            </main>
         </div>
     )
 }
