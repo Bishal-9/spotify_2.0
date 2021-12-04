@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Center from '../components/Center'
 import Sidebar from '../components/Sidebar'
 
 export default function Home() {
@@ -9,9 +10,9 @@ export default function Home() {
                 <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/174/174872.png" />
             </Head>
 
-            <main className=''>
+            <main className='flex'>
                 <Sidebar />
-                {/* Center */}
+                <Center />
 
                 <div>
                     {/* Player */}
